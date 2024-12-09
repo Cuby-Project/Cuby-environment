@@ -7,7 +7,7 @@ architecture-beta
     group db(database)[database]
     group mobile(internet)[mobile]
 
-    service mobile_client(logos:react)[User Phone Browser] in mobile
+    service mobile_client(logos:flutter)[User Phone Browser] in mobile
 
     service express_server(logos:express)[Express Server] in desktop_app
     service electron_client(logos:electron)[ElectronJs App] in desktop_app
