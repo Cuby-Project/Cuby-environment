@@ -5,9 +5,9 @@ architecture-beta
     group queueing_system(logos:rabbitmq)[Queue System]
     group captureAPI(cloud)[Capture API]
     group db(database)[database]
-    group mobile(internet)[mobile]
+    group mobile(internet)[User phone]
 
-    service mobile_client(logos:flutter)[User Phone Browser] in mobile
+    service mobile_client(logos:flutter)[Mobile application] in mobile
 
     service express_server(logos:express)[Express Server] in desktop_app
     service electron_client(logos:electron)[ElectronJs App] in desktop_app
